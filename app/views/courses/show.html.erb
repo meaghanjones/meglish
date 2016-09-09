@@ -1,5 +1,33 @@
 <div class ="container">
   <h1><%= @course.name %></h1>
   <p> <%= @course.description %></p>
+
+  <% if @course.lessons.any? %>
+    <h4>Lessons<h4>
+
+    <ul>
+      <% @course.lessons.each do |lesson| %>
+        <li>
+          <p>Level:<%= lesson.level %></p>
+          <p>Best Age for lesson:<%= lesson.age %></p>
+          <p>Description<%= lesson.description %></p>
+          <p><%= raw(lesson.video) %></p>
+          <p>Aim of Lesson:<%= lesson.aim %></p>
+          <p>Skills:<%= lesson.skills %></p>
+          <p>Time: <%= lesson.time %> hour</p><br>
+          <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
+          <%= link_to "Delete", course_lesson_path(@course, lesson),
+                                 :data => {:confirm => "Are you sure?",
+                                            :method => "delete"} %>
+      </li>
+    <% end %>
+  <%else%>
+    <p> There are no lessons yet!</p>
+  <%end%>
+  <hr>
+  <p><%= link_to "Edit", edit_course_path(@course) %></p>
+  <p><%= link_to "Delete", course_path(@course),
+                         :data => {:confirm => "Are you sure?",
+                                   :method => "delete"} %></p>
   <p><%= link_to "Return to Courses", courses_path %></p>
 </div>

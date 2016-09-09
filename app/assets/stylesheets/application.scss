@@ -1,2 +1,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$exciting-green: #33FFBD;
+$dark-greenish: #4A7023;
+$medium-green: #13735E;
+$light-green: #72B497;
+$grey-green: #B4B9AC;
+$neon-green: #DBD253;
+
+h1 {
+  color: $dark-greenish;
+}
+
+.btn-primary {
+  background-color: $exciting-green;
+  border-color: white;
+  margin-top: 20px;
+   border-radius: 5px;
+}
+.btn-primary:hover {
+  background: $neon-green;
+  border: 0px solid transparent;
+}

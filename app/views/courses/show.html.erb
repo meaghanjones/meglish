@@ -8,12 +8,12 @@
     <ul>
       <% @course.lessons.each do |lesson| %>
         <li>
-          <p>Level:<%= lesson.level %></p>
-          <p>Best Age for lesson:<%= lesson.age %></p>
-          <p>Description<%= lesson.description %></p>
+          <p>Level: <%= lesson.level %></p>
+          <p>Best Age for lesson: <%= lesson.age %></p>
+          <p>Description: <%= lesson.description %></p>
           <p><%= raw(lesson.video) %></p>
-          <p>Aim of Lesson:<%= lesson.aim %></p>
-          <p>Skills:<%= lesson.skills %></p>
+          <p>Aim of Lesson: <%= lesson.aim %></p>
+          <p>Skills: <%= lesson.skills %></p>
           <p>Time: <%= lesson.time %> hour</p><br>
           <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
           <%= link_to "Delete", course_lesson_path(@course, lesson),

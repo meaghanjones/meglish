@@ -26,9 +26,6 @@
     <p> There are no lessons yet!</p>
   <%end%>
   <hr>
-  <p><%= link_to "Edit", edit_course_path(@course) %></p>
-  <p><%= link_to "Delete", course_path(@course),
-                         :data => {:confirm => "Are you sure?",
-                                   :method => "delete"} %></p>
+  <p><%= link_to "New Lesson", new_course_lesson_path(@course) %></p>
   <p><%= link_to "Return to Courses", courses_path %></p>
 </div>

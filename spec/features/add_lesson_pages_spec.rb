@@ -11,12 +11,12 @@ describe "the add a lesson process" do
     click_on 'New Lesson'
     fill_in 'Name', :with => 'Important Cultural Aspects of Interviewing'
     fill_in 'Age', :with => 'adults'
-    fill_in 'description', :with => 'This lesson gives you a video to watch and homework to complete.'
-    fill_in 'video', :with => 'www.youtube.com'
-    fill_in 'aim', :with => 'to be good at interviewing'
-    fill_in 'skills', :with => 'speaking'
-    fill_in 'time', :with => '1'
-    expect(page).to have_content 'Lessons'
+    fill_in 'Description', :with => 'This lesson gives you a video to watch and homework to complete.'
+    fill_in 'Video', :with => 'www.youtube.com'
+    fill_in 'Aim', :with => 'to be good at interviewing'
+    fill_in 'Skills', :with => 'speaking'
+    fill_in 'Time', :with => '1'
+    expect(page).to have_content 'English Slang'
   end
 
   it "gives error when no name is entered" do

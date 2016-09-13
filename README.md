@@ -45,7 +45,7 @@ $ postgres
 
 6. Migrate database
 ```
-$ db:create rake db:migrate rake db:seed
+$ rake db:create db:migrate 
 ```
 
 7. Start the Rails web server and navigate to `localhost:3000` in a browser:

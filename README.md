@@ -1,24 +1,60 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#  Meglish
+## By Meaghan Jones
 
-Things you may want to cover:
+Meglish allows a user to organize lessons into courses. A course page lists all of the lessons and each lesson has specific information related to that lesson on its page. At the bottom of each lesson are navigation links to the course index.
 
-* Ruby version
+Courses and lessons can be deleted or edited and more can be added. The application is intended to help english teachers create lessons for English learners in a well structured way.
 
-* System dependencies
+## Technologies Used
 
-* Configuration
+* Ruby on Rails 5 <br>
+* Rspec, Capybara<br>
+* Database: Postgres, ActiveRecord
 
-* Database creation
+Configuration
+------------
 
-* Database initialization
+1. Install *Meglish* by cloning the repository.  
+```
+$ git clone https://github.com/meaghanjones/meglish
+```
 
-* How to run the test suite
+2. Check to make sure ruby and rails are installed on your machine.  
+```
+$ ruby -v
+$ rails -v
+```
+If they are not installed, please follow instructions [here](http://guides.rubyonrails.org/getting_started.html#installing-rails) to install ruby on rails.
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Navigate to project file
+```
+$ cd meglish
+```
 
-* Deployment instructions
+4. Install required gems
+```
+$ bundle install
+```
 
-* ...
+5. Run Postgres
+```
+$ postgres
+```
+
+6. Migrate database
+```
+$ db:create rake db:migrate rake db:seed
+```
+
+7. Start the Rails web server and navigate to `localhost:3000` in a browser:
+```
+$ rails server
+```
+
+
+License
+-------
+_This software is licensed under the MIT license._<br>
+Copyright (c) 2016 **Meaghan Jones**

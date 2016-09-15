@@ -14,7 +14,7 @@ Courses and lessons can be deleted or edited and more can be added. The applicat
 Configuration
 ------------
 
-1. Install *Meglish* by cloning the repository.  
+1. Install Meglish by cloning the repository.  
 ```
 $ git clone https://github.com/meaghanjones/meglish
 ```
@@ -50,7 +50,6 @@ $ rake db:create db:migrate
 ```
 $ rails server
 ```
-
 
 License
 -------

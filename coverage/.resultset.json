@@ -437,6 +437,18 @@
         1,
         null
       ],
+      "/Users/admin/Desktop/meglish/spec/factories.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/admin/Desktop/meglish/config/routes.rb": [
         1,
         1,
@@ -458,14 +470,14 @@
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         1,
@@ -476,7 +488,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -509,6 +521,6 @@
         null
       ]
     },
-    "timestamp": 1473903854
+    "timestamp": 1473951204
   }
 }

@@ -88,7 +88,7 @@
         1,
         null,
         1,
-        12,
+        11,
         null,
         null,
         null,
@@ -862,7 +862,6 @@
         2,
         2,
         2,
-        2,
         null
       ],
       "/Users/Guest/Desktop/meglish/spec/models/user_spec.rb": [
@@ -887,6 +886,6 @@
         null
       ]
     },
-    "timestamp": 1474060743
+    "timestamp": 1474060942
   }
 }

@@ -1,5 +1,5 @@
 class LessonsController < ApplicationController
-
+before_filter :authenticate_user!
   def new
     @course = Course.find(params[:course_id])
     @lesson = @course.lessons.new

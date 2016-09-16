@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
   before_filter :authenticate_user!
-  load_and_authorize_resource :through => :current_user
+  # load_and_authorize_resource :through => :current_user
 
   def index
     @courses = Course.all

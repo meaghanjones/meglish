@@ -16,16 +16,22 @@
           <p>Aim of Lesson: <%= lesson.aim %></p>
           <p>Skills: <%= lesson.skills %></p>
           <p>Time: <%= lesson.time %> hour</p><br>
-          <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
-          <%= link_to "Delete", course_lesson_path(@course, lesson),
-                                 :data => {:confirm => "Are you sure?",
-                                            :method => "delete"} %>
+
+          <% if can? :update, @lesson %>
+            <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
+            <%= link_to "Delete", course_lesson_path(@course, lesson),
+                                   :data => {:confirm => "Are you sure?",
+                                              :method => "delete"} %>
+            <% end %>
       </li>
     <% end %>
   <%else%>
     <p> There are no lessons yet!</p>
   <%end%>
   <hr>
-  <p><%= link_to "New Lesson", new_course_lesson_path(@course) %></p>
+  <% if can? :create, @course %>
+    <p><%= link_to "New Lesson", new_course_lesson_path(@course) %></p>
+  <% end %>
   <p><%= link_to "Return to Courses", courses_path %></p>
+
 </div>

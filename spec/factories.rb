@@ -3,7 +3,7 @@ FactoryGirl.define do
     email 'meaghan@gmail.com'
     password 'password'
   end
-  
+
   factory(:course) do
     name('English for hiking')
     description('If you are going hiking in the US you need this vocaulary!')

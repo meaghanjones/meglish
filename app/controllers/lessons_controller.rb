@@ -39,6 +39,6 @@ end
 
 private
   def lesson_params
-    params.require(:lesson).permit(:name, :level, :age, :description, :video, :aim, :skills, :time)
+    params.require(:lesson).permit(:name, :description, :video, :skills, :time)
   end
 end

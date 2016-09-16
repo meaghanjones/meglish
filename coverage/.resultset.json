@@ -88,7 +88,7 @@
         1,
         null,
         1,
-        11,
+        12,
         null,
         null,
         null,
@@ -630,6 +630,29 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/meglish/app/controllers/categories_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/meglish/app/controllers/courses_controller.rb": [
         1,
         1,
@@ -762,7 +785,14 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/meglish/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/meglish/app/models/course.rb": [
+        1,
         1,
         1,
         1,
@@ -852,6 +882,7 @@
         2,
         2,
         2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/meglish/spec/models/lesson_spec.rb": [
@@ -886,6 +917,6 @@
         null
       ]
     },
-    "timestamp": 1474060942
+    "timestamp": 1474064420
   }
 }

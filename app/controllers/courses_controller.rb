@@ -4,7 +4,6 @@ class CoursesController < ApplicationController
 
   def index
     @courses = Course.all
-    render :index
   end
 
   def show
@@ -46,7 +45,7 @@ class CoursesController < ApplicationController
 
 private
   def course_params
-    params.require(:course).permit(:name, :description, :level, :age, :skill, :photo)
+    params.require(:course).permit(:name, :description, :level, :age, :skill, :photo, category_ids:[])
   end
 
 end

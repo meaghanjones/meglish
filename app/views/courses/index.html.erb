@@ -7,11 +7,20 @@
 
 <div class ="container room-for-header">
   <h1>Courses</h1>
-  <ul>
+
+  <div class="card-deck-wrapper">
+    <div class="card-deck">
     <% @courses.each do |course| %>
-      <li><%= link_to course.name, course_path(course) %></li>
-      <li><%= image_tag course.photo.url(:medium) %>
+      <div class="card">
+        <h4 class="card-title text-center"><%= link_to course.name, course_path(course) %><h4>
+        <span class="card-img-top" src="..." alt="Card image cap"><%= image_tag course.photo.url(:medium) %><span>
+        <div class="card-block">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
     <% end %>
-  </ul>
+    </div>
+  </div>
 <%= link_to "New Course", new_course_path %>
 </div>

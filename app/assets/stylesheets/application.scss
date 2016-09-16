@@ -152,3 +152,20 @@ h1, h2 {
     display: table-cell;
     vertical-align: middle;
 }
+
+.card-deck {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-items: stretch;
+  margin: 20px;
+}
+.card-deck .card {
+  display: block;
+  flex-basis: 33.3%; /* change this value for each breakpoint*/
+  width: 100%;
+}
+
+.card {
+  border-color: green;
+}

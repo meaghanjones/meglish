@@ -6,21 +6,21 @@
 </div>
 
 <div class ="container room-for-header">
-  <h1>Courses</h1>
+  <h1 class="center-title">Available English Courses</h1>
 
-  <div class="card-deck-wrapper">
+
     <div class="card-deck">
     <% @courses.each do |course| %>
       <div class="card">
-        <h4 class="card-title text-center"><%= link_to course.name, course_path(course) %><h4>
+        <h2 class="card-title text-center"><%= course.name %><h2>
         <span class="card-img-top" src="..." alt="Card image cap"><%= image_tag course.photo.url(:medium) %><span>
-        <div class="card-block">
+        <div class="card-block text-xs-center">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-primary center-button"><%= link_to "Start Learning!", course_path(course) %></button>
         </div>
       </div>
 
     <% end %>
     </div>
-  </div>
 <%= link_to "New Course", new_course_path %>
 </div>

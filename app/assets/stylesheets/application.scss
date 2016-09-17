@@ -165,7 +165,11 @@ h1, h2 {
   flex-basis: 33.3%; /* change this value for each breakpoint*/
   width: 100%;
 }
+.center-title{
+  text-align: center;
+}
 
-.card {
-  border-color: green;
+.center-button{
+    display: block;
+    margin: 0 auto;
 }

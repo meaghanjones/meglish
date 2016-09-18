@@ -1,29 +1,22 @@
 <% provide(:title, "Course Lessons") %>
-<div class ="container">
+<div class = "container content">
   <h1><%= @course.name %></h1>
   <p> <%= @course.description %></p>
 
   <% if @course.lessons.any? %>
     <h4>Lessons<h4>
-
-    <ul>
       <% @course.lessons.each do |lesson| %>
-        <li>
-          <p>Level: <%= lesson.level %></p>
-          <p>Best Age for lesson: <%= lesson.age %></p>
-          <p>Description: <%= lesson.description %></p>
-          <p><%= raw(lesson.video) %></p>
-          <p>Aim of Lesson: <%= lesson.aim %></p>
-          <p>Skills: <%= lesson.skills %></p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <span class="embed-responsive-item"><%= raw(lesson.video) %></span>
+          </div>
           <p>Time: <%= lesson.time %> hour</p><br>
-
           <% if can? :update, @lesson %>
             <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
             <%= link_to "Delete", course_lesson_path(@course, lesson),
                                    :data => {:confirm => "Are you sure?",
                                               :method => "delete"} %>
-            <% end %>
-      </li>
+          <% end %>
+
     <% end %>
   <%else%>
     <p> There are no lessons yet!</p>

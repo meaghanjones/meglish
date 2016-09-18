@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'cancancan'
 gem 'paperclip'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 
 group :development, :test do
   gem 'byebug', platform: :mri

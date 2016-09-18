@@ -15,6 +15,7 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to 'Course List', courses_path %></li>
                <% if current_user %>
                <li><%= link_to 'Edit Profile',edit_user_registration_path %></li>
                <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
@@ -29,7 +30,7 @@
 
   <footer class ="footer-basic-centered">
     <p class="footer-company-motto" >Learn English with Meglish</p>
-    <p class="footer-links"><a href="#">Home</a>"."<a href="#">Home</a>"."<a href="#">Home</a>"."<a href="#">Home</a></p>
+    <p class="footer-links"><%= link_to 'Course List', courses_path %>&nbsp;&#0149;&nbsp;<a href="#">Home</a>&nbsp;&#0149;&nbsp;<a href="#">Home</a>&nbsp;&#0149;&nbsp;<a href="#">Home</a></p>
   </footer>
 </div>
   </body>

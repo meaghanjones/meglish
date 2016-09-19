@@ -1,5 +1,7 @@
 class LessonsController < ApplicationController
 before_filter :authenticate_user!
+before_action :admin_user,     only: :destroy
+
   def new
     @course = Course.find(params[:course_id])
     @lesson = @course.lessons.new

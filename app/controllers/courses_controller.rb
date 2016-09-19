@@ -1,5 +1,7 @@
 class CoursesController < ApplicationController
   before_filter :authenticate_user!
+  # before_action :admin_user,     only: :destroy
+  # before_action :correct_user,   only: [:edit, :update]
   # load_and_authorize_resource :through => :current_user
 
   def index

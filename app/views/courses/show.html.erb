@@ -10,6 +10,7 @@
             <span class="embed-responsive-item"><%= raw(lesson.video) %></span>
           </div>
           <p>Time: <%= lesson.time %> hour</p><br>
+          <p> <%= markdown(lesson.body) %> </p>
           <% if can? :update, @lesson %>
             <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
             <%= link_to "Delete", course_lesson_path(@course, lesson),

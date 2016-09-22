@@ -18,6 +18,7 @@ gem 'cancancan'
 gem 'paperclip'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
+gem 'redcarpet', '3.0.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri

@@ -6,18 +6,20 @@
   <% if @course.lessons.any? %>
     <h4>Lessons<h4>
       <% @course.lessons.each do |lesson| %>
+      <% if lesson.video? %>
           <div class="embed-responsive embed-responsive-16by9">
             <span class="embed-responsive-item"><%= raw(lesson.video) %></span>
           </div>
+      <% else %>
           <p>Time: <%= lesson.time %> hour</p><br>
           <p> <%= markdown(lesson.body) %> </p>
           <% if can? :update, @lesson %>
-            <%= link_to "Edit", edit_course_lesson_path(@course, lesson) %> |
-            <%= link_to "Delete", course_lesson_path(@course, lesson),
+            <%= link_to "Edit Lesson", edit_course_lesson_path(@course, lesson) %> |
+            <%= link_to "Delete Lesson", course_lesson_path(@course, lesson),
                                    :data => {:confirm => "Are you sure?",
                                               :method => "delete"} %>
           <% end %>
-
+    <% end %>
     <% end %>
   <%else%>
     <p> There are no lessons yet!</p>

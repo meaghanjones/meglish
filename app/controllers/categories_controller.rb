@@ -15,12 +15,15 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     if @category.save
-      flash[:notice] = "Category sucessfully added!"
-      redirect_to courses_path
+      respond_to do |format|
+        format.html { redirect_to new_course_path }
+        format.js
+      end
     else
       render :new
     end
   end
+
 
   def edit
     @category = Category.find(params[:id])

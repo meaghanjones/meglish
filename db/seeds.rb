@@ -25,12 +25,12 @@ categories_list.each do |name|
 end
 
 courses_list = [
-  ["Want to hike in English?", "After taking this class you will know all the things to take on your next hiking trip in the US!", "intermediate", "all ages", "speaking"],
+  ["Want to hike in English?", "After taking this class you will know all the things to take on your next hiking trip in the US!", "intermediate", "all ages", "speaking", ""],
   ["English Slang", "Learning American slang is important to understand series and having American friends.", "intermediate", "all ages", "speaking"],
   ["Interview Preparation", "Learn the English and cultural considerations for having a successful interview in English.", "upper-intermediate", "adults", "speaking"]
 
 ]
 
 courses_list.each do |name, description, level, age, skill, photo|
-  Course.create(name: name, description: description, level: level, age: age, skill: skill, photo: photo)
+  Course.create(name: name, description: description, level: level, age: age, skill: skill)
 end

@@ -10,6 +10,8 @@ describe "the add a course process" do
     fill_in 'Description', :with => 'The best class on slang to ever exist'
     attach_file 'Photo','spec/asset_specs/images/english.png'
     fill_in 'Level', :with => 'advanced'
+    fill_in 'Skill', :with => 'speaking'
+    fill_in 'Age', :with => 'adults'
     click_on 'Create Course'
     expect(page).to have_content 'Courses'
   end

@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'devise'
 
 describe ApplicationHelper do
   describe "#admin_user" do

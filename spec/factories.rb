@@ -1,9 +1,4 @@
 FactoryGirl.define do
-  factory :user do
-    email 'meaghan@gmail.com'
-    password 'password'
-  end
-
   factory(:course) do
     name('English for hiking')
     description('If you are going hiking in the US you need this vocaulary!')
@@ -11,5 +6,14 @@ FactoryGirl.define do
     level('intermediate')
     age('adult')
     skill('speaking')
+    user
+
+  factory :user do
+    email 'meaghan@gmail.com'
+    password 'password'
+    admin 'true'
+  end
+
+
   end
 end

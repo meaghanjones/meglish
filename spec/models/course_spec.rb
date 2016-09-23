@@ -9,8 +9,5 @@ describe Course do
 
   it { should have_many :lessons }
   it { should have_and_belong_to_many :categories }
-
-  it "has a valid factory" do
-    expect(course).to be_valid
-  end
+  
 end

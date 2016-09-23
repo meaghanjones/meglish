@@ -8,7 +8,6 @@ RSpec.describe "Factory Girl" do
       it "is valid" do
         factory = FactoryGirl.build(factory_name)
         if factory.respond_to?(:valid?)
-          
           expect(factory).to be_valid, lambda { factory.errors.full_messages.join("\n") }
         end
       end

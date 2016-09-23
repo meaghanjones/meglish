@@ -3,12 +3,18 @@ require 'rails_helper'
 describe "the add a lesson process" do
   it "adds a new lesson" do
     user = FactoryGirl.create(:user)
-    course = FactoryGirl.create(:course)
     login_as(user, :scope => :user, :run_callbacks => false)
     visit root_path
-    click_on 'Start Learning!'
-    click_link 'New Lesson'
-    fill_in 'Name', :with => 'Important Cultural Aspects of Interviewing'
+    click_on 'New Course'
+    fill_in 'Name', :with => 'English for Hiking'
+    fill_in 'Description', :with => 'Next time you need to hike youll know all the words'
+    fill_in 'Level', :with => 'Intermediate'
+    fill_in 'Age', :with => 'All Ages'
+    fill_in 'Skill', :with => 'Speaking'
+    click_on "Create Course"
+    click_button 'Start Learning!'
+    click_on 'New Lesson'
+    fill_in 'Name', :with => 'Packing list for hiking'
     fill_in 'Description', :with => 'This lesson gives you a video to watch and homework to complete.'
     fill_in 'Video', :with => 'www.youtube.com'
     fill_in 'Skills', :with => 'speaking'

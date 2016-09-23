@@ -1,10 +1,10 @@
   <h4>Lesson<h4>
     <% if @lesson.video? %>
         <div class="embed-responsive embed-responsive-16by9">
-          <span class="embed-responsive-item"><%= raw(lesson.video) %></span>
+          <span class="embed-responsive-item"><%= raw(@lesson.video) %></span>
         </div>
         <p>Time: <%= @lesson.time %> hour</p><br>
-        <p> <%= markdown(lesson.body) %> </p>
+        <p> <%= markdown(@lesson.body) %> </p>
 
     <% else %>
         <p>Time: <%= @lesson.time %> hour</p><br>

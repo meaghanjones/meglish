@@ -2,6 +2,11 @@ class LessonsController < ApplicationController
 before_filter :authenticate_user!
 before_action :admin_user,     only: :destroy
 
+def show
+  @course = Course.find(params[:course_id])
+  @lesson = Lesson.find(params[:id])
+end
+
   def new
     @course = Course.find(params[:course_id])
     @lesson = @course.lessons.new

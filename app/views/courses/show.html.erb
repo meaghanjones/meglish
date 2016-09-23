@@ -3,9 +3,9 @@
   <h1><%= @course.name %></h1>
   <p> <%= @course.description %></p>
 
-  <% if @course.lessons.each do |lesson| %> 
+  <% if @course.lessons.each do |lesson| %>
     <h4>Lessons<h4>
-        <p> <%= lesson.name %> </p>
+        <p> <%= link_to lesson.name, course_lesson_path(@course, lesson) %> </p>
     <% end %>
   <%else%>
     <p> There are no lessons yet!</p>

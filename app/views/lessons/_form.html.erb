@@ -17,7 +17,7 @@
   <%=f.text_field :time, class: "form-control" %>
 
   <%=f.label :body, "Content (use Markdown)" %>
-  <%=f.text_field :body, class: "form-control" %>
+  <%=f.text_area :body, size: "24x40", class: "form-control" %>
 
   <p><%= f.submit "Save", class: "btn btn-primary" %></p>
 

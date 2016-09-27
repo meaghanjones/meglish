@@ -3,7 +3,6 @@
 
 ### _The databased is seeded so the admin user is meaghan.m.jones@gmail.com password: epicodus._
 ### _I implemented ajax on the new courses route in order to show a form to add new categories._
-### _My tests for the AJAX element work but I am having difficulties setting up an admin user in Factory Girl so some older specs are failing_
 
 Meglish allows a user to organize lessons into courses. A course page lists all of the lessons and each lesson has specific information related to that lesson on its page. At the bottom of each lesson are navigation links to the course index.
 
@@ -47,7 +46,7 @@ $ postgres
 
 6. Migrate database
 ```
-$ rake db:create db:migrate
+$ rake db:create db:schema:load db:seed
 ```
 
 7. Start the Rails web server and navigate to `localhost:3000` in a browser:

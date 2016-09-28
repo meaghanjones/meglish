@@ -2,7 +2,7 @@
 <%= render "layouts/errors", :object => @category %>
 <%= form_for @category do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name, class: "form-control" %>
+  <%= f.text_field :name, class: "form-control", id: "category_name" %>
 
   <%= f.submit class: "btn btn-primary" %>
 <% end %>

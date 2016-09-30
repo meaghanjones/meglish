@@ -1,12 +1,10 @@
+<div class="container content">
   <h4>Lesson<h4>
     <% if @lesson.video? %>
         <div class="embed-responsive embed-responsive-16by9">
           <span class="embed-responsive-item"><%= raw(@lesson.video) %></span>
         </div>
-        <p>Time: <%= @lesson.time %> hour</p><br>
-        <p> <%= markdown(@lesson.body) %> </p>
-
-    <% else %>
+    <% end %>
         <p>Time: <%= @lesson.time %> hour</p><br>
         <p> <%= markdown(@lesson.body) %> </p>
         <% if can? :update, @lesson %>
@@ -15,7 +13,6 @@
                                  :data => {:confirm => "Are you sure?",
                                             :method => "delete"} %>
           <% end %>
-    <% end %>
 
 <hr>
 <% if can? :create, @course %>

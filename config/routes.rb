@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :skills
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
-  get 'static_pages/home'
   get 'static_pages/about'
 
   root :to => 'courses#index'
@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   end
 
   resources :categories
+  resources :skills
 end

@@ -22,6 +22,9 @@
 
     <% end %>
     </div>
-    <%= link_to "New Course", new_course_path %>
+    <% if can? :create, @course %>
+      <p>  <%= link_to "New Course", new_course_path %></p>
+    <% end %>
+
   </div>
 </div>

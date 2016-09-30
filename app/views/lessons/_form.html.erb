@@ -10,8 +10,15 @@
   <%=f.label :video %>
   <%=f.text_field :video, class: "form-control" %>
 
-  <%=f.label :skills %>
-  <%=f.text_field :skills, class: "form-control" %>
+  <div class="field">
+    <%= f.label "Skills" %><br />
+    <%= f.collection_check_boxes :skill_ids, Skill.all, :id, :name do |b| %>
+    <div class="collection-check-box">
+      <%= b.check_box %>
+      <%= b.label %>
+    </div>
+    <% end %>
+  </div>
 
   <%=f.label :time %>
   <%=f.text_field :time, class: "form-control" %>

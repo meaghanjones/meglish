@@ -2,5 +2,7 @@
 <div class="container content">
 <h1>New lesson for <%= @course.name %> </h1>
 
+<span id= "add_skill"><%= link_to "add skill", new_skill_path(@skill), class: "btn btn-primary", remote: true %></span>
+
 <%= render 'form' %>
 </div>

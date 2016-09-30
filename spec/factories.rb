@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :skill do
+    name "MyString"
+  end
   factory(:course) do
     name('English for hiking')
     description('If you are going hiking in the US you need this vocaulary!')

@@ -1,0 +1,8 @@
+<h1>New Skill for Lessons</h1>
+<%= render "layouts/errors", :object => @skill %>
+<%= form_for @skill do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control", id: "skill_name" %>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

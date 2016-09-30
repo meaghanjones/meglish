@@ -35,10 +35,22 @@
       </div>
     </nav>
 <div class="wrapper">
+  <div class="container">
+    <% if flash[:alert] %>
+      <div class="alert alert-danger">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
+    <% if flash[:notice] %>
+      <div class="alert alert-success">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+  </div>
+
     <%= yield %>
 
-    <%= flash[:alert] %>
-    <%= flash[:notice] %>
+
 
   <footer class ="footer-basic-centered">
     <p class="footer-company-motto" >Learn English with Meglish</p>

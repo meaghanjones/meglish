@@ -6,8 +6,6 @@ class LocationsController < ApplicationController
       marker.lat location.latitude
       marker.lng location.longitude
       marker.infowindow location.title
-
-
     end
   end
 end

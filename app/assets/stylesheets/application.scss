@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "static_pages.scss";
 
 $dark-green: #173527;
 $exciting-green: #33FFBD;
@@ -201,4 +202,12 @@ body {
 img.gif {
   width: 50%;
   border-radius: 200px;
+}
+
+#map label {
+  width: auto; display:inline;
+}
+
+.google-map {
+  padding-bottom: 200px;
 }

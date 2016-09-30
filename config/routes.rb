@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users
+  resources :locations
 
   resources :courses do
     resources :lessons

@@ -34,3 +34,12 @@ courses_list = [
 courses_list.each do |name, description, level, age, skill, photo|
   Course.create(name: name, description: description, level: level, age: age, skill: skill)
 end
+
+locations_list = [
+  [-23.5831733, -46.6475448, "Rua Professor Miguel Milano, Sao Paulo, Brasil", "Vila Mariana, Sao Paulo, Brazil"],
+  [-33.4402733, -70.6455273, "Santa Lucia Hill", "Santiago Centro, Santiago, Chile"]
+]
+
+locations_list.each do |latitude, longitude, address, title|
+  Location.create(latitude: latitude, longitude: longitude, address: address, title: title)
+end

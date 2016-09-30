@@ -2,7 +2,10 @@
 ## By Meaghan Jones
 
 ### _The databased is seeded so the admin user is meaghan.m.jones@gmail.com password: epicodus._
-### _I implemented ajax on the new courses route in order to show a form to add new categories._
+### to do
+
+format flash messages
+style google maps
 
 Meglish allows a user to organize lessons into courses. A course page lists all of the lessons and each lesson has specific information related to that lesson on its page. At the bottom of each lesson are navigation links to the course index.
 

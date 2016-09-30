@@ -37,7 +37,16 @@ end
 
 locations_list = [
   [-23.5831733, -46.6475448, "Rua Professor Miguel Milano, Sao Paulo, Brasil", "Vila Mariana, Sao Paulo, Brazil"],
-  [-33.4402733, -70.6455273, "Santa Lucia Hill", "Santiago Centro, Santiago, Chile"]
+  [-33.4402733, -70.6455273, "Santa Lucia Hill", "Santiago Centro, Santiago, Chile"],
+  [4.6482837, -74.2478939, "Bogota, Colombia", "Bogota, Colombia"],
+  [55.7492837, 37.0706993, "Moscow, Russia", "Moscow, Russia"],
+  [59.9174911, 30.0441918, "Saint Petersburg, Russia", "Saint Petersburg, Russia"],
+  [-25.4947398, -49.4302288, "Curitiba, Brazil", "Curitiba, Brazil"],
+  [-0.1862504, -78.5709705, "Quito, Ecuador", "Quito, Ecudao"],
+  [37.565289, 126.8491201, "Seoul, South Korea", "Seoul, South Korea"],
+  [25.085651, 121.4228179, "Taipei, Taiwan", "Taipei, Taiwan"],
+  [-34.6153711, -58.5737497, "Buenos Aires, Argentina", "Buenos Aires, Argentina"]
+
 ]
 
 locations_list.each do |latitude, longitude, address, title|

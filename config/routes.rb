@@ -8,9 +8,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :users do
-    resources :courses
-  end
+  resources :users
 
   resources :courses do
     resources :lessons

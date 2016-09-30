@@ -9,14 +9,15 @@
   <h1 class="center-title title">Available English Courses</h1>
 
 
-    <div class="card-deck">
+    <div class="row">
     <% @courses.each do |course| %>
-      <div class="card">
-        <h2 class="card-title text-center"><%= course.name %><h2>
-        <span class="card-img-top" src="..." alt="Card image cap"><%= image_tag course.photo.url(:medium) %></span>
-        <div class="card-block text-xs-center">
-          <p class="card-text"><%= course.description%></p>
-          <button class="btn btn-primary center-button"><%= link_to "Start Learning!", course_path(course) %></button>
+      <div class="col-sm-6">
+        <div class="card card-block">
+
+          <%= image_tag course.photo.url(:medium), class: "card-img-top" %>
+            <h2 class="card-title text-center"><%= course.name %></h2>
+            <p class="card-text"><%= course.description%></p>
+            <button class="btn btn-primary center-button"><%= link_to "Start Learning!", course_path(course) %></button>
         </div>
       </div>
 

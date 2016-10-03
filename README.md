@@ -19,33 +19,33 @@ Courses and lessons can be deleted or edited and more can be added. The applicat
 ## Configuration
 ------------
 
-1. Install Meglish by cloning the repository.  
+Install Meglish by cloning the repository.  
 ```
 $ git clone https://github.com/meaghanjones/meglish
 ```
-2. Check to make sure ruby and rails are installed on your machine.  
+Check to make sure ruby and rails are installed on your machine.  
 ```
 $ ruby -v
 $ rails -v
 ```
-If they are not installed, please follow instructions [here](http://guides.rubyonrails.org/getting_started.html#installing-rails) to install ruby on rails.
-3. Navigate to project file
+If they are not installed, please follow instructions [here](http://guides.rubyonrails.org/getting_started.html#installing-rails) to install ruby on rails.<br>
+Navigate to project file
 ```
 $ cd meglish
 ```
-4. Install required gems
+Install required gems
 ```
 $ bundle install
 ```
-5. Run Postgres
+Run Postgres
 ```
 $ postgres
 ```
-6. Migrate database
+Migrate database
 ```
 $ rake db:create db:schema:load db:seed
 ```
-7. Start the Rails web server and navigate to `localhost:3000` in a browser:
+Start the Rails web server and navigate to `localhost:3000` in a browser:
 ```
 $ rails server
 ```

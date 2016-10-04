@@ -6,24 +6,29 @@
 </div>
 <div class="content">
   <div class ="container room-for-header">
-    <h1 class="center-title title">Available English Courses</h1>
-
-
+    <h2 class="title">Available English Courses</h2>
     <div class="row">
       <% @courses.each do |course| %>
       <div class="col-sm-6">
-        <div class="card card-block">
-          <%= image_tag course.photo.url(:medium), class: "card-img-top" %>
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+          <%= image_tag course.photo.url, class: "card-img-top card-image" %>
+          <div class="card-block">
           <h2 class="card-title text-center"><%= course.name %></h2>
-          <p class="card-text"><%= course.description%></p>
-          <button class="btn btn-primary center-button"><%= link_to "Start Learning!", course_path(course) %></button>
+          <p class="card-text text-center"><%= course.description%></p>
+          <div class="center-button">
+          <button class="btn btn-primary"><%= link_to "Start Learning!", course_path(course) %></button>
+          </div>
+          </div>
         </div>
       </div>
+    </div>
 
     <% end %>
     </div>
     <% if can? :create, @course %>
       <p>  <%= link_to "New Course", new_course_path %></p>
+
     <% end %>
 
   </div>

@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users
-  resources :locations
+  resources :locations, only: :index
+
 
   resources :courses do
     resources :lessons

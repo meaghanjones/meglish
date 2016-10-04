@@ -32,7 +32,7 @@ end
     @course= Course.find(params[:course_id])
     @lesson = Lesson.find(params[:id])
     if @lesson.update(lesson_params)
-      redirect_to courses_path(@lesson.course)
+      redirect_to course_lesson_path(@course, @lesson)
     else
       render :edit
     end

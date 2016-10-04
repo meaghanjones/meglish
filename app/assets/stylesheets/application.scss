@@ -11,7 +11,12 @@ $light-green: #72B497;
 $grey-green: #B4B9AC;
 $neon-green: #DBD253;
 
-h1, h2 {
+h1 {
+  color: $dark-greenish;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
   color: $dark-greenish;
   font-family: 'Abril Fatface', cursive;
 }
@@ -63,4 +68,20 @@ img.gif {
 
 .map-container {
   margin-bottom: 200em;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card{
+  padding: 2%;
+}
+
+.center-button {
+  text-align: center;
+}
+
+.lato-type {
+  font-family: 'Lato', sans-serif;
 }

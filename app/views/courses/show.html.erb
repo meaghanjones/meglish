@@ -1,19 +1,33 @@
 <% provide(:title, "Course Lessons") %>
 <div class = "container content">
-  <h1><%= @course.name %></h1>
-  <p> <%= @course.description %></p>
+  <div class="row">
+    <div class="col-sm-6">
+      <h1><%= @course.name %></h1>
+      <p> <%= @course.description %></p>
+    </div>
+  </div>
 
-  <% if @course.lessons.each do |lesson| %>
-    <h4>Lessons<h4>
+  <div class ="row">
+    <div class="col-md-6">
+      <%= image_tag @course.photo.url, class: "card-image" %>
+    </div>
+    <div class="col-md-6">
+      <h4>Lessons<h4>
+      <% if @course.lessons.each do |lesson| %>
         <p> <%= link_to lesson.name, course_lesson_path(@course, lesson) %> </p>
-    <% end %>
-  <%else%>
-    <p> There are no lessons yet!</p>
-  <%end%>
-  <hr>
-  <% if can? :create, @course %>
-    <p><%= link_to "New Lesson", new_course_lesson_path(@course) %></p>
-  <% end %>
-  <p><%= link_to "Return to Courses", courses_path %></p>
+      <% end %>
+      <%else%>
+        <p> There are no lessons yet!</p>
+      <%end%>
+      <hr>
+      <% if can? :create, @course %>
+        <p><%= link_to "New Lesson", new_course_lesson_path(@course) %></p>
+        <%= link_to "Delete Course", course_path(@course),
+                               :data => {:confirm => "Are you sure?",
+                                          :method => "delete"} %>
+      <% end %>
+  </div>
+</div>
+  <p><%= link_to "Return to Course List", courses_path %></p>
 
 </div>

@@ -41,7 +41,7 @@ Run Postgres
 ```
 $ postgres
 ```
-Migrate database
+Create database, Load the schema and seed the database
 ```
 $ rake db:create db:schema:load db:seed
 ```

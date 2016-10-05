@@ -35,28 +35,26 @@
         </div>
       </div>
     </nav>
-<div class="wrapper">
-  <div class="container">
-    <% if flash[:alert] %>
-      <div class="alert alert-danger">
-        <%= flash[:alert] %>
+    <div class="wrapper">
+      <div class="container">
+        <% if flash[:alert] %>
+          <div class="alert alert-danger">
+            <%= flash[:alert] %>
+          </div>
+        <% end %>
+        <% if flash[:notice] %>
+          <div class="alert alert-success">
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-    <% if flash[:notice] %>
-      <div class="alert alert-success">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-  </div>
 
     <%= yield %>
 
-
-
-  <footer class ="footer-basic-centered">
-    <p class="footer-company-motto" >Learn English with Meglish</p>
-    <p class="footer-links"><%= link_to 'Course List', courses_path %>&nbsp;&nbsp;&#0149;&nbsp;&nbsp;<%= link_to 'About', locations_path %>&nbsp;&nbsp;&#0149;&nbsp;&nbsp;<a href="#">Testimonials</a>&nbsp;&nbsp;&#0149;&nbsp;&nbsp;<a href="#">Contact</a></p>
-  </footer>
-</div>
+    <footer class ="footer-basic-centered">
+      <p class="footer-company-motto" >Learn English with Meglish</p>
+      <p class="footer-links"><%= link_to 'Course List', courses_path %>&nbsp;&nbsp;&#0149;&nbsp;&nbsp;<%= link_to 'About', locations_path %>&nbsp;&nbsp;&#0149;&nbsp;&nbsp;<a href="#">Testimonials</a>&nbsp;&nbsp;&#0149;&nbsp;&nbsp;<a href="#">Contact</a></p>
+    </footer>
+    </div>
   </body>
 </html>

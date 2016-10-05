@@ -2,10 +2,6 @@
 ## By Meaghan Jones
 
 
-### The databased is seeded so the admin user is meaghan.m.jones@gmail.com<br> password: epicodus.
-
-### I incorporated google maps as my API. In order to see the google map while on the local server you can navigate to [the location page](localhost:3000/locations).
-
 Meglish allows a user to organize lessons into courses. A course page lists all of the lessons and each lesson has specific information related to that lesson on its page. At the bottom of each lesson are navigation links to the course index.
 
 Courses and lessons can be deleted or edited and more can be added. The application is intended to help english teachers create lessons for English learners in a well structured way.

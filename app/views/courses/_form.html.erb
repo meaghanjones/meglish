@@ -1,4 +1,4 @@
-<h1>New Course</h1>
+
 <%= render "layouts/errors", :object => @course %>
 <%= form_for @course do |f| %>
   <%= f.label :name %>
@@ -21,14 +21,14 @@
 
 
   <div class="field">
-  <%= f.label "Categories" %><br />
-  <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |b| %>
-    <div class="collection-check-box">
-      <%= b.check_box %>
-      <%= b.label %>
-    </div>
-  <% end %>
-</div>
+    <%= f.label "Categories" %><br />
+    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |b| %>
+      <div class="collection-check-box">
+        <%= b.check_box %>
+        <%= b.label %>
+      </div>
+    <% end %>
+  </div>
 
   <%= f.submit class: "btn btn-primary" %>
 <% end %>

@@ -24,15 +24,39 @@ categories_list.each do |name|
  Category.create(name: name )
 end
 
+levels_list = [
+  "Beginner",
+  "Post Beginner",
+  "Lower Intermediate",
+  "Intermediate",
+  "Upper Intermediate",
+  "Advanced",
+  "Intermediate / Advanced"
+]
+
+levels_list.each do |name|
+  Level.create(name: name)
+end
+
+ages_list = [
+  "All Ages",
+  "Adults",
+  "Teenagers"
+]
+
+ages_list.each do |age_name|
+  Age.create(age_name: age_name)
+end
+
 courses_list = [
-  ["Want to hike in English?", "After taking this class you will know all the things to take on your next hiking trip in the US!", "intermediate", "all ages", "speaking", ""],
-  ["English Slang", "Learning American slang is important to understand series and having American friends.", "intermediate", "all ages", "speaking"],
-  ["Interview Preparation", "Learn the English and cultural considerations for having a successful interview in English.", "upper-intermediate", "adults", "speaking"]
+  ["Want to hike in English?", "After taking this class you will know all the things to take on your next hiking trip in the US!"],
+  ["English Slang", "Learning American slang is important to understand series and having American friends."],
+  ["Interview Preparation", "Learn the English and cultural considerations for having a successful interview in English."]
 
 ]
 
-courses_list.each do |name, description, level, age, skill, photo|
-  Course.create(name: name, description: description, level: level, age: age, skill: skill)
+courses_list.each do |name, description|
+  Course.create(name: name, description: description)
 end
 
 locations_list = [

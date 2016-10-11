@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :level do
+    name "MyString"
+  end
   factory :skill do
     name "MyString"
   end

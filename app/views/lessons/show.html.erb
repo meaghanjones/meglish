@@ -1,6 +1,6 @@
 <% provide(:title, "Meglish Lesson") %>
 <div class="container content">
-  <h4>Lesson<h4>
+  <h1><%= @lesson.name %><h4>
     <% if @lesson.video? %>
         <div class="embed-responsive embed-responsive-16by9">
           <span class="embed-responsive-item"><%= raw(@lesson.video) %></span>

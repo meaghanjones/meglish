@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160930223935) do
+ActiveRecord::Schema.define(version: 20161006180455) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "ages", force: :cascade do |t|
+    t.string   "age_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -31,13 +37,12 @@ ActiveRecord::Schema.define(version: 20160930223935) do
     t.string   "description"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
-    t.string   "level"
-    t.string   "age"
-    t.string   "skill"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.integer  "level_id"
+    t.integer  "age_id"
   end
 
   create_table "lessons", force: :cascade do |t|
@@ -53,6 +58,12 @@ ActiveRecord::Schema.define(version: 20160930223935) do
   create_table "lessons_skills", id: false, force: :cascade do |t|
     t.integer "skill_id",  null: false
     t.integer "lesson_id", null: false
+  end
+
+  create_table "levels", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "locations", force: :cascade do |t|

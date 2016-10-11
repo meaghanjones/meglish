@@ -2,26 +2,27 @@
 <%= render "layouts/errors", :object => @course %>
 <%= form_for @course do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name, class: "form-control" %>
+  <%= f.text_field :name, class: "form-control" %><br>
 
   <%= f.label :description %>
-  <%= f.text_area :description, class:"form-control" %>
+  <%= f.text_area :description, class:"form-control" %><br>
 
   <%= f.label :photo %>
-  <%= f.file_field :photo, class: "form-control" %>
+  <%= f.file_field :photo, class: "form-control" %><br>
 
-  <%= f.label :level %>
-  <%= f.text_field :level, class: "form-control" %>
-
-  <%= f.label :age %>
-  <%= f.text_field :age, class: "form-control" %>
-
-  <%= f.label :skill %>
-  <%= f.text_field :skill, class: "form-control" %>
+  <div class="field">
+   <%= f.label :age %><br>
+   <%= f.collection_select :age_id, Age.all, :id, :age_name %>
+  </div><br>
 
 
   <div class="field">
-    <%= f.label "Categories" %><br />
+   <%= f.label :level %><br>
+   <%= f.collection_select :level_id, Level.all, :id, :name %>
+  </div><br>
+
+  <div class="field">
+    <%= f.label "Categories" %><br/>
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |b| %>
       <div class="collection-check-box">
         <%= b.check_box %>

@@ -25,6 +25,9 @@ gem 'gmaps4rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'foreman'
+  gem 'mail_form'
+  gem 'simple_form'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'

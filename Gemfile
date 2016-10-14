@@ -19,15 +19,14 @@ gem 'paperclip'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'redcarpet', '3.0.0'
-gem 'chartkick'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'mail_form'
+gem 'simple_form'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'foreman'
-  gem 'mail_form'
-  gem 'simple_form'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'

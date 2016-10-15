@@ -10,6 +10,10 @@
 <div class="content">
   <div class ="container room-for-header">
     <h2 class="title">Available English Courses</h2>
+    <h2> Find Course by Category </h2>
+    <% @categories.each do |category| %>
+      <%= link_to category.name, courses_path(:category=> category.name) %>
+    <% end %>
     <div class="row">
       <% @courses.each do |course| %>
       <div class="col-sm-6">

@@ -4,7 +4,12 @@ class CoursesController < ApplicationController
   # load_and_authorize_resource :through => :current_user
 
   def index
-    @courses = Course.all
+    if params[:category_ids]
+      @courses = Course.where(params[:category_ids])
+    else
+      @courses = Course.all
+    end
+    @categories = Category.all
   end
 
   def show

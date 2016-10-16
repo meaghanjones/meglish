@@ -23,6 +23,7 @@ gem 'geocoder'
 gem 'gmaps4rails'
 gem 'mail_form'
 gem 'simple_form'
+gem 'bloggy'
 
 group :development, :test do
   gem 'byebug', platform: :mri

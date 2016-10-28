@@ -14,7 +14,7 @@
       <%= image_tag @course.photo.url, class: "card-image" %>
     </div>
     <div class="col-md-6">
-      <h4>Lessons<h4>
+      <h4>Lessons</h4>
       <% if @course.lessons.each do |lesson| %>
         <p> <%= link_to lesson.name, course_lesson_path(@course, lesson) %> </p>
       <% end %>

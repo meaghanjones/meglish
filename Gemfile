@@ -24,7 +24,7 @@ gem 'gmaps4rails'
 gem 'mail_form'
 gem 'simple_form'
 gem 'bloggy'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'byebug', platform: :mri

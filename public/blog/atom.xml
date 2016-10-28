@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>BLOG_NAME</title>
+ <link href="YOUR_URL/atom.xml" rel="self"/>
+ <link href="YOUR_URL"/>
+ <updated>2016-10-15T21:16:12-07:00</updated>
+ <id>BLOG_URL</id>
+ <author>
+   <name>BLOG_NAME</name>
+ </author>
+
+ 
+ <entry>
+   <title>first_meglish_post</title>
+   <link href="YOUR_URL/first-meglish-post.html"/>
+   <updated>2016-10-15T00:00:00-07:00</updated>
+   <id>BLOG_URL/first-meglish-post</id>
+   <content type="html">&lt;h2&gt;Welcome to Meglish&lt;/h2&gt;
+
+&lt;p&gt;This blog will be updated often!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

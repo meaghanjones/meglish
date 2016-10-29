@@ -20,8 +20,7 @@
               <h2 class="card-title text-center"><%= course.name %></h2>
               <p class="card-text text-center"><%= course.description%></p>
               <div class="center-button">
-                <button class="btn btn-primary"><%= link_to "Start Learning!", course_path(course) %>
-                </button>
+                <%= button_to  "Start Learning!", course_path(course), :class=>"btn btn-primary", :method => :get %>
               </div>
             </div>
           </div>

@@ -711,6 +711,11 @@
         null,
         1
       ],
+      "/Users/admin/Desktop/meglish/config/initializers/paperclip.rb": [
+        1,
+        1,
+        1
+      ],
       "/Users/admin/Desktop/meglish/config/initializers/rails_admin.rb": [
         1,
         null,
@@ -780,7 +785,6 @@
         1,
         1,
         null,
-        1,
         null,
         1,
         null,
@@ -1142,13 +1146,6 @@
         null,
         1,
         0,
-        null,
-        null
-      ],
-      "/Users/admin/Desktop/meglish/app/controllers/static_pages_controller.rb": [
-        1,
-        1,
-        null,
         null,
         null
       ],
@@ -1618,6 +1615,6 @@
         null
       ]
     },
-    "timestamp": 1476398147
+    "timestamp": 1478756183
   }
 }

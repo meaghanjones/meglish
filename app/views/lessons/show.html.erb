@@ -18,5 +18,6 @@
   <% if can? :create, @course %>
     <p><%= link_to "New Lesson", new_course_lesson_path(@course) %></p>
   <% end %>
+  <br>
   <%= link_to "Back", :back %>
 </div>

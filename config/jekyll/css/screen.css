@@ -196,7 +196,7 @@ ul.posts {
     margin-bottom: 1em;
   }
 
-  footer-basic-centered{
+  .footer-basic-centered{
   	background-color: #173527;
   	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   	box-sizing: border-box;
@@ -211,7 +211,7 @@ ul.posts {
   }
 
   .footer-basic-centered .footer-company-motto{
-  	color:  $grey-green;
+  	color:  #8f9296;
   	font-size: 24px;
   	margin: 0;
   }

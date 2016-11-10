@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>BLOG_URL</id>
  <author>
-   <name>BLOG_NAME</name>
+   <name>Meglish</name>
  </author>
 
  {% for post in site.posts %}
@@ -22,5 +22,5 @@ layout: nil
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
- 
+
 </feed>

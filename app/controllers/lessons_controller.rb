@@ -1,5 +1,5 @@
 class LessonsController < ApplicationController
-before_action :authenticate_user!
+# before_action :authenticate_user!
 before_action :admin_user,     only: :destroy
 
 def show

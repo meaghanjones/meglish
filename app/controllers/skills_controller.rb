@@ -1,5 +1,5 @@
 class SkillsController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   before_action :admin_user,     except: [:index, :show]
 
   # GET /skills
